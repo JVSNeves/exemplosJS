@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 7</title>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(stupid.jpg);
+            background-repeat: round;    
+            }
+        div{
+            background-color: rgb(22, 77, 126);
+            padding: 50px;
+            border-radius: 20px;
+            border: 6px solid;
+            border-style: outset;
+            width: 250px;
+            height: 100px;
+        }
+        input[type="text"]{
+            width: 240px;
+            height: 25px;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        input[type="submit"]{
+            font-size: 18px;
+            border-radius: 2px;
+            padding: 4px;
+            width: 100px;
+            margin-top: 6px;
+        }
+        input:focus{
+            outline: 3px solid rgba(202, 72, 72, 0.575);
+        }
+    </style>
+</head>
+<body>
+    <h2>Exemplo 16</h2>
+    <h3>Validação de formulário</h3>
+    <div>
+        <label for="idade">Nome</label>
+        <input name="idade" id="idade" type="text"><br>
+        <button id="enviar" onclick="validar()">Validar</button>
+        <p id="msg" style="color: whitesmoke;"></p>
+    </div>
+    
+    
+    <script>
+        function validar(){
+           const id = document.getElementById("idade").value;
+            let texto;
+            if(id < 1 || id > 130)
+                texto = "Idade inválida";
+            else
+            texto = "Idade válida";
+            document.getElementById("msg").innerHTML = texto;
+        }
+    </script>
+</body>
+</html>
