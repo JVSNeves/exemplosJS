@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 11</title>
+</head>
+<body>
+    <img id="img" src="img/bolinhaboa.jpg" onclick="trocaImagem()" alt="bolinha de tênis de mesa sem danos">
+
+    <script>
+        const imagem = document.getElementById("img");
+        modo = 1;
+        function trocaImagem(){
+            if(modo == 1){
+                imagem.src = "img/bolinharuimreal.png";   
+                modo = 0;
+            }else{
+                imagem.src = "img/bolinhaboa.jpg";
+                modo = 1;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
