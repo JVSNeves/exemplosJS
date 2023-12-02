@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13</title>
+</head>
+<body style="font-size: 20px;">
+    <h2>Mouse over/out</h2>
+    <h1>Clique no KAMIEL!</h1>
+    <div style="max-width: fit-content; background-color: aquamarine; padding: 50px;" onmouseover="kamiel(this)"; onmouseout="legendario(this)"; style="background-color: rgb(20, 134, 96); ">
+        KAMIEL
+    </div>
+
+
+    <script>
+        function kamiel(obj){
+            obj.innerHTML = "NÃO CONSEGUE NÉ KKK";
+            obj.style.fontSize = "60px";
+            obj.style.paddingTop = "60px";
+            obj.style.float = "right";
+        }
+        function legendario(obj){
+            obj.innerHTML = "DESISTE KK";
+            obj.style.padding = "50px";
+            obj.style.float = "left";
+        }
+    </script>
+    
+</body>
+</html>
